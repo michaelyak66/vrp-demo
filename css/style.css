@@ -203,12 +203,59 @@ h6,
     }
 }
 
+.w{
+    color: white !important;
+}
 .page-header {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this container */
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url(../img/header.jpg) top left no-repeat;
+    background: url(../img/b3.jpg) top left no-repeat;
     background-size: cover;
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
 }
+
+.page-header::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning for the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.689); /* Black color with 50% opacity */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.page-header > * {
+    position: relative; /* Ensure the content is above the overlay */
+    z-index: 2;
+}
+
+.page-header2 {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: url(../img/b2.jpg) top left no-repeat;
+    background-size: cover;
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+}
+
+.page-header2::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning for the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.689); /* Black color with 50% opacity */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.page-header2 > * {
+    position: relative; /* Ensure the content is above the overlay */
+    z-index: 2;
+}
+
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {

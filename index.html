@@ -34,6 +34,11 @@
         .display-1{
             font-size: calc(1.225rem + 4.5vw);
         }
+        .img{
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: contain;
+        }
     </style>
 </head>
 
@@ -47,7 +52,7 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+        <!-- <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
                 <small><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</small>
                 <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
@@ -56,7 +61,7 @@
                 <small><i class="fa fa-envelope text-primary me-2"></i>info@example.com</small>
                 <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</small>
             </div>
-        </div>
+        </div> -->
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
@@ -78,6 +83,16 @@
                             <a href="team.html" class="dropdown-item">Team Member</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="inventory.html" class="dropdown-item">inventory</a>
+                            <a href="cash.html" class="dropdown-item">cash</a>
+                            <a href="invoice.html" class="dropdown-item">invoice</a>
+                            <a href="loan.html" class="dropdown-item">loan</a>
+                            <a href="sales.html" class="dropdown-item">sales</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -103,28 +118,28 @@
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                <div class="carousel-item active page-header">
+                    <!-- <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-8">
-                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Welcome to VRP</p>
-                                    <h4 style="font-size: calc(1.625rem + 2.5vw);" class="display-1 mb-4 animated slideInDown">Empowering Gas, Fuel Suppliers & Distributors with a One-Stop-Solution</h4>
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown w">Welcome to VRP</p>
+                                    <h4 style="font-size: calc(1.625rem + 2.5vw);" class="display-1 mb-4 animated  w">Empowering Gas, Fuel Suppliers & Distributors with a One-Stop-Solution</h4>
                                     <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                <div class="carousel-item page-header2">
+                    <!-- <img class="w-100" src="img/carousel-2.jpg" alt="Image"> -->
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-7">
-                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Welcome to VRP</p>
-                                    <h4 style="font-size: calc(1.625rem + 2.5vw);" class="display-1 mb-4 animated slideInDown">The Ultimate Ecosystem for players in the downstream energy sector
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown w">Welcome to VRP</p>
+                                    <h4 style="font-size: calc(1.625rem + 2.0vw); text-align: balance;" class="display-1 mb-4 animated slideInDown w">The Ultimate Ecosystem for players in the downstream energy sector
                                     </h4>
                                     <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
                                 </div>
@@ -263,73 +278,67 @@
     <!-- Facts End -->
 
 
-    <!-- Features Start -->
-    <div class="container-xxl feature py-5">
-        <div class="container">
-            <h4 style="text-align: center !important;" class="display-5 mb-4">Access a suite of powerful tools tailored for the Gas and Fuel sectors</h4>
-            <div class="row g-5 align-items-center">
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Why Choosing Us!</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <a class="btn btn-primary py-3 px-5" href="">Explore More</a>
-                </div> -->
-                <div class="col-lg-12">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-12">
-                            <div class="row g-4">
-                                <div class="col-4 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="feature-box border rounded p-4 text-center">
-                                        <i class="fa fa-chart-line fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">OyaSync Sales Management Software</h4>
-                                        <p class="mb-3">Streamline your sales processes with our powerful management.</p>
-                                    </div>
+<!-- Features Start -->
+<div class="container-xxl feature py-5">
+    <div class="container">
+        <h4 style="text-align: center !important;" class="display-5 mb-4">Access a suite of powerful tools tailored for the Gas and Fuel sectors</h4>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-12">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-12">
+                        <div class="row g-4">
+                            <!-- Adjusted the columns to stack on smaller screens -->
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="feature-box border rounded p-4 text-center">
+                                    <i class="fa fa-chart-line fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">OyaSync Sales Management Software</h4>
+                                    <p class="mb-3">Streamline your sales processes with our powerful management.</p>
                                 </div>
-                                <div class="col-4 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4 text-center">
-                                        <i class="fa fa-boxes fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">Comprehensive Inventory Management</h4>
-                                        <p class="mb-3">Keep track of your stock effortlessly with our robust inventory management system.</p>
-                                    </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="feature-box border rounded p-4 text-center">
+                                    <i class="fa fa-boxes fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Comprehensive Inventory Management</h4>
+                                    <p class="mb-3">Keep track of your stock effortlessly with our robust inventory management system.</p>
                                 </div>
-                                <div class="col-4 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4 text-center">
-                                        <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">Customer Relationship Tools</h4>
-                                        <p class="mb-3">Enhance customer satisfaction with tools designed to manage and nurture relationships.</p><br>
-                                    </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="feature-box border rounded p-4 text-center">
+                                    <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Customer Relationship Tools</h4>
+                                    <p class="mb-3">Enhance customer satisfaction with tools designed to manage and nurture relationships.</p>
                                 </div>
-                                <div class="col-4 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4 text-center">
-                                        <i class="fa fa-mobile-alt fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">Mobile Applications for Payment and Delivery</h4>
-                                        <p class="mb-3">Facilitate seamless transactions and deliveries with our user-friendly mobile apps.</p>
-                                    </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="feature-box border rounded p-4 text-center">
+                                    <i class="fa fa-mobile-alt fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Mobile Applications for Payment and Delivery</h4>
+                                    <p class="mb-3">Facilitate seamless transactions and deliveries with our user-friendly mobile apps.</p>
                                 </div>
-                                <div class="col-4 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4 text-center">
-                                        <i class="fa fa-car fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">Auto Loans for Fleet Expansion</h4>
-                                        <p class="mb-3">Grow your business with flexible financing options for expanding your vehicle fleet.</p> <br>
-                                    </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="feature-box border rounded p-4 text-center">
+                                    <i class="fa fa-car fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Auto Loans for Fleet Expansion</h4>
+                                    <p class="mb-3">Grow your business with flexible financing options for expanding your vehicle fleet.</p>
                                 </div>
-                                <div class="col-4 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4 text-center">
-                                        <i class="fa fa-gas-pump fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">Gas Purchase Financing</h4>
-                                        <p class="mb-3">Access convenient financing solutions for your gas purchases to ensure uninterrupted supply.</p><br>
-                                    </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="feature-box border rounded p-4 text-center">
+                                    <i class="fa fa-gas-pump fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Gas Purchase Financing</h4>
+                                    <p class="mb-3">Access convenient financing solutions for your gas purchases to ensure uninterrupted supply.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
-            </div>
+            </div>     
         </div>
     </div>
+</div>
+<!-- Features End -->
 
-    <!-- Features End -->
 
 
     <!-- Oyasync Profit Maximization Section Start -->
@@ -337,7 +346,7 @@
     <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <h1 style="color: #fff !important;" class="display-5 mb-4">Profit Maximization Resources for the Downstream Energy Sector</h1>
+                <h1 style="color: #fff !important;" class="display-5 mb-4">We are providing the downstream energy sector with resources for Profit Maximization</h1>
                 <p class="mb-4">Oyasync is a business process optimization company with extensive experience in helping LPG, CNG, PMS, and AGO suppliers increase profit, block operation leakages, and generate clean data through reliable records of sales and payments.</p>
                 <p class="mb-4">Our value chain resource platform offers robust solutions targeting unique problems experienced by gas plant owners such as employee theft, cash handling, incorrect sales reports, and access to credit for expansion.</p>
                 <p class="mb-4">We truly believe we are a strong option for gas and fuel businesses looking to increase profit in the shortest time possible.</p>
@@ -561,63 +570,59 @@
                 <div class="row">
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/portland-gas-logo.png" class="img-fluid" alt="Portland Gas">
+                            <img class="img" src="img/logo/portland.png" class="img-fluid" alt="Portland Gas">
                             <p class="mt-3">Portland Gas</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/selai-gas-logo.png" class="img-fluid" alt="Selai Gas">
+                            <img class="img" src="img/logo/selia.png" class="img-fluid" alt="Selai Gas">
                             <p class="mt-3">Selai Gas</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/tangram-energy-logo.png" class="img-fluid" alt="Tangram Energy">
+                            <img class="img" src="img/logo/tangram.png" class="img-fluid" alt="Tangram Energy">
                             <p class="mt-3">Tangram Energy</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/optimal-energy-logo.png" class="img-fluid" alt="Optimal Energy">
+                            <img class="img" src="img/logo/optima.png" class="img-fluid" alt="Optimal Energy">
                             <p class="mt-3">Optimal Energy</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/ameogo-pago-logo.png" class="img-fluid" alt="Ameogo Pago">
+                            <img class="img" src="img/logo/apg.png" class="img-fluid" alt="Ameogo Pago">
                             <p class="mt-3">Ameogo Pago</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/moniepoint-logo.png" class="img-fluid" alt="Moniepoint">
+                            <img class="img" src="img/logo/monie.png" class="img-fluid" alt="Moniepoint">
                             <p class="mt-3">Moniepoint</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/nnpc-logo.png" class="img-fluid" alt="NNPC">
+                            <img class="img" src="img/logo/nnpc.jpeg" class="img-fluid" alt="NNPC">
                             <p class="mt-3">NNPC</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/arcus-360-logo.png" class="img-fluid" alt="Arcus 360">
+                            <img class="img" src="img/logo/arcus.jpg" class="img-fluid" alt="Arcus 360">
                             <p class="mt-3">Arcus 360</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <div class="bg-white border rounded p-3">
-                            <img src="img/tewagas-logo.png" class="img-fluid" alt="TewaGas">
+                            <img class="img" src="img/logo/tewa.jpeg" class="img-fluid" alt="TewaGas">
                             <p class="mt-3">TewaGas</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <div class="bg-white border rounded p-3">
-                            <p class="mt-3">...and many distributors nationwide</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
