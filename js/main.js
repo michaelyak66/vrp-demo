@@ -21,18 +21,23 @@
         if ($(window).width() < 992) {
             if ($(this).scrollTop() > 45) {
                 $('.fixed-top').addClass('bg-white shadow');
+                $('.nav-link').addClass('c');
             } else {
                 $('.fixed-top').removeClass('bg-white shadow');
+                $('.nav-link').removeClass('c');
             }
         } else {
             if ($(this).scrollTop() > 45) {
-                $('.fixed-top').addClass('bg-white shadow').css('top', -45);
+                $('.fixed-top').addClass('bg-white').css('top', -45);
+                $('.nav-link').addClass('c');
+
             } else {
                 $('.fixed-top').removeClass('bg-white shadow').css('top', 0);
+                $('.nav-link').removeClass('c');
+
             }
         }
     });
-    
     
     // Back to top button
     $(window).scroll(function () {
